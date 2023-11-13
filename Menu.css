@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+body{
+   background-image: url(Armazem.jpg); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+.menu_dropdown,
+.nav_menu > ul{
+    display: block;
+    position: fixed;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow: hidden;
+    box-shadow: 2px 0 2px;
+} 
+.material-symbols-outlined{
+    background-color: rgb(54, 53, 53); 
+    color: white; 
+    display: block; 
+    width: 2px;
+    padding: 0;
+    cursor: pointer;
+}
