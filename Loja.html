@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendas de Veiculos</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Mercado</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <link rel="stylesheet" href="Menu.css">
 </head>
 <body>
-    <footer class="rodape">
-        <ul class="menu" id="menu" role="button" aria-label="material-symbols-outlined"> <!--Barra de navegação-->
-            <div class="menu-collapse" id="menu-collapse">
-                <p class="menu">
-                    <a class="btn-collapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse">
-                        <menu type="context">
-                            <button class="btn-collapse" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">
-                                <span class="material-symbols-outlined">menu</span>
-                            </button>
-                        </menu>
-                    </a>
-                </p>
-
-            </div>
-        </ul>
-    </footer>
+    <findset class="Margem">
+        <header>
+            <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu id="menu_dropdown">
+                <ul class="nav_menu" id="nav_menu" role="button" aria-label="material-symbols-outlined" data-toggle="dropdown" aria-expanded="false" aria-controls="dropdown">
+                    <li draggable="true"><a href="#">HOME</a></li>
+                    <li draggable="true"><a href="#">ROUPAS</a></li>
+                    <li draggable="true"><a href="#">CALÇADOS</a></li>
+                    <li draggable="true"><a href="#">INFORMÁTICA</a></li>
+                    <li draggable="true"><a href="#">CONTATO</a></li>
+                </ul>
+            </menu> 
+        </findset>
+    </header>
+    <script>
+        function clickMenu(){
+            if (menu_dropdown.style.display == 'block'){
+                menu_dropdown.style.display = 'none';
+            } else {
+                menu_dropdown.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
