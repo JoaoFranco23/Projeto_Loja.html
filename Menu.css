@@ -31,3 +31,52 @@ body{
     padding: 0;
     cursor: pointer;
 }
+.nav_menu > li > a{
+    display: block;
+    padding: 10px;
+    line-height: 1em;
+    text-align: center;
+    justify-content: column;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-family: verdana;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.05);
+    transition: background 0.1s ease-in-out;
+}
+.nav_menu > li > a{
+    font-family: FontAwesome; 
+    speak-as:none;
+    text-indent: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+}
+.nav_menu > li > a.HOME::before{
+    content: \f039;
+} 
+
+.nav_menu ul > li > a{
+    overflow: hidden;
+    left: 5em;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    transition: all 0.1s ease-in-out;
+} 
+.nav_menu li:first-child > a:hover,
+.nav_menu a:first-child{
+    content: "";
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-top: 1px solid black;
+    height: 5em;
+    background: #267fdd;
+    width: 60%;
+    color: #fff;    
+    line-height:5
+}
