@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
     <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="SubMenu.css">
 </head>
 <body>
     <findset class="Margem">
@@ -16,20 +17,37 @@
                     <li draggable="true"><a href="#">HOME</a></li>
                     <li draggable="true"><a href="#">ROUPAS</a></li>
                     <li draggable="true"><a href="#">CALÇADOS</a></li>
-                    <li draggable="true"><a href="#">INFORMÁTICA</a></li>
+                    <div class="su_bmenu" id="doubleDropdownButton" role="button" aria-label="hidden=" data-toggle="dropdown" aria-expanded="false" aria-labelledby="sub_menu">
+                        <ul class="sub_menu_dropdown" aria-labelledby="doubleDropdownButton">
+                            <li type="doubleDropdown_menu" class="fa-angle-double-down">
+                                <div class="menu_dropdown_menu" role="button" aria-label="doubleDropdown_menu" data-toggle="dropdownButton" aria-expanded="false" aria-labelled="sub_menu_dropdown">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="sub_menu">
+                                        PROCESSADOR
+                                        <svg class="sub_menu" aria-hidden="true" fill="none" viewBox="0 0 6 10">
+                                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path> 
+                                        </svg>
+                                    </button>
+                                    <li draggable="true"><a href="#">AMD</a></li>
+                                    <li draggable="true"><a href="#">INTEL</a></li>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
                     <li draggable="true"><a href="#">CONTATO</a></li>
                 </ul>
             </menu> 
         </findset>
     </header>
-    <script>
+    <!-- O script abaixo é um seletor responsavel por interação do menu-->
+    <script>  
         function clickMenu(){
             if (menu_dropdown.style.display == 'block'){
                 menu_dropdown.style.display = 'none';
             } else {
-                menu_dropdown.style.display = 'block'
+                menu_dropdown.style.display = 'block';
             }
         }
     </script>
+    
 </body>
 </html>
