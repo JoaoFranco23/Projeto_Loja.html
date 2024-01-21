@@ -14,7 +14,7 @@
         <header>
             <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
             <menu id="menu_dropdown">
-                <ul class="nav_menu" id="nav_menu" role="button" aria-label="material-symbols-outlined" data-toggle="dropdown" aria-expanded="false" aria-controls="dropdown">
+                <ul class="nav_menu" id="nav_menu" role="button" aria-label="material-symbols-outlined" data-toggle="dropdown" aria-expanded="false" aria-controls="dropdown" aria-selected="">
                     <li draggable="true"><a href="#">HOME</a></li>
                     <li draggable="true"><a href="#">ROUPAS</a></li>
                     <li draggable="true"><a href="#">CALÇADOS</a></li>
@@ -40,15 +40,6 @@
         </header> 
     </findset>
     <!-- O script abaixo é um seletor responsavel por interação do menu-->
-    <script>  
-        function clickMenu(){
-            if (menu_dropdown.style.display == 'block'){
-                menu_dropdown.style.display = 'none';
-            } else {
-                menu_dropdown.style.display = 'block';
-            }
-        }
-    </script>
-    
+    <script src="Menu.js"></script>
 </body>
 </html>
