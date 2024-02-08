@@ -1,0 +1,34 @@
+.box-busca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+} 
+
+.busca-search-input::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+.busca-search-input::-webkit-input-placeholder{
+    color: white;
+}
+.busca-search-input::-moz-placeholder{
+    color: white;
+}
+.busca-search-input::-ms-input-placeholder{
+    color: white;
+} 
+.Busca-search form{
+    display: flex;
+    border-radius: 50px;
+    background-color: aqua;
+    height: 45px;
+} 
+.Busca-search:hover .busca-search-input{
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 250px;
+}
