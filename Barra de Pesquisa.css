@@ -31,7 +31,7 @@
 .Busca-search:hover .busca-search-input{
     padding-left: 2em;
     padding-right: 1em;
-    width: 250px;
+    width: 100px;
 }
 .busca-search-input{
     outline: 0;
@@ -72,4 +72,16 @@
     clear: left;
     position: relative;
     margin-top: -30px;
+} 
+ 
+.Search-icone{
+    margin: auto;
+    color:  #fff;
+} 
+
+@media screen and (min-width: 400px){
+    .Busca-search:hover .busca-search-input{
+        width: 360px;
+    }
 }
+    
