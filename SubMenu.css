@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.dropdow ul{
+    list-style: none;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+} 
+/*será responsavel por flutuar os submenus*/
+.hardware-dropdow li{
+    position: relative;
+}
+.hardware-dropdow{
+    display: block;
+    padding: 10px;
+    color: #333333; 
+    text-decoration: none;
+}
+.hardware-dropdow a{
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+}
+.hardware-dropdow a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #38afda;
+    color: #ffffff;
+}
+/*Será responsavel por ocultar o submenu*/
+.hardware-dropdow li,
+.dropdow ul{
+    display: none;
+}
+/*ao deslizar o mause no submenu, será mostrado*/
+.hardware-dropdow li:hover > .dropdow ul{
+    display: block;
+}
+/*Será mostrado o menu na vertical ao deslizar encima*/
+.hardware-dropdow li,
+.dropdow ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
